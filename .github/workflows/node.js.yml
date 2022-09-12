@@ -22,6 +22,6 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - run: rm -rf node_modules
-      - run: yarn install --frozen-lockfile --force
+      - run: yarn install --force
       - run: yarn test tests/Tokens/adminTest.js
 
